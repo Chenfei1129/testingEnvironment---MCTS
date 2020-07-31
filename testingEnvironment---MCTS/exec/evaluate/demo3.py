@@ -83,8 +83,8 @@ def main():
     actionDistribution = randomPolicy()
     #numSimulation, selectChild, expand, estimateValue, backup, outputDistribution
     numSimulation = 200
-    cInit = 100
-    cBase =1
+    cInit = 1
+    cBase =100
     scoreChild = ScoreChild(cInit,cBase)
     selectChild = SelectChild(scoreChild)
     uniformActionPrior = {action : 1/4 for action in actionSpace}
